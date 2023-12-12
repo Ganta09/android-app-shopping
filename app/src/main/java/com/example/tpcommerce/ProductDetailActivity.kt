@@ -2,6 +2,7 @@ package com.example.tpcommerce
 
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.RatingBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
@@ -27,11 +28,12 @@ class ProductDetailActivity : AppCompatActivity() {
 
         // Set up the "Ajouter au Panier" button (no action for now)
         val fabAddToCart: FloatingActionButton = findViewById(R.id.fab_add_to_cart)
-
+        val ratingBar: RatingBar = findViewById(R.id.productDetailRatingBar)
+        ratingBar.rating = product.rating.rate.toFloat()
         Glide.with(this).load(product.image).into(imageView)
         titleView.text = product.title
         priceView.text = "${product.price} €"
         descriptionView.text = product.description
-        ratingView.text = "Rating: ${product.rating.rate} (${product.rating.count})"
+        ratingView.text = "Rating: (${product.rating.count})"
     }
 }
