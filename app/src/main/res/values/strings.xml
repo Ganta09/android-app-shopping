@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Tpcommerce</string>
+    <string name="add_to_cart">Ajouter au panier</string>
+    <string name="back_to_main">Retour</string>
+
+</resources>
