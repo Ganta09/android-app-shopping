@@ -1,8 +1,8 @@
 # android-tp-shopping
-Application Android développée dans le cadre du travail pratique pour UniLaSalle.
+Application Android développée dans le cadre du TP Android à UniLaSalle.
 
 ## Aperçu
-L'application android-tp-shopping est une application mobile simple mais fonctionnelle conçue pour simuler une expérience d'achat en ligne. Les utilisateurs peuvent parcourir une liste de produits, voir des informations détaillées sur chaque article, ajouter des produits à un panier et consulter ce panier avec le calcul du prix total.
+L'application android-tp-shopping est une application mobile conçue pour simuler une expérience d'achat en ligne. Les utilisateurs peuvent parcourir une liste de produits, voir des informations détaillées sur chaque article, ajouter des produits à un panier et consulter ce panier avec le calcul du prix total. L'API utilisée pour les produits est fakestoreapi.
 
 ## Fonctionnalités
 - **Liste de produits** : Les utilisateurs peuvent faire défiler un catalogue de produits, chaque article étant présenté avec son image, son titre et son prix.
