@@ -2,5 +2,11 @@
     <string name="app_name">Tpcommerce</string>
     <string name="add_to_cart">Ajouter au panier</string>
     <string name="back_to_main">Retour</string>
+    <string name="open_basket">Panier</string>
+    <string name="filter_products">Filtrer</string>
+    <string name="remove_product">Supprimer</string>
+    <string name="total_label">Total:</string>
+    <string name="total_price_placeholder">€0.00</string>
+    <string name="total_price">€%.2f</string>
 
 </resources>

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -28,6 +29,13 @@ class ProductDetailActivity : AppCompatActivity() {
 
         // Set up the "Ajouter au Panier" button (no action for now)
         val fabAddToCart: FloatingActionButton = findViewById(R.id.fab_add_to_cart)
+        fabAddToCart.setOnClickListener {
+            val productToAdd = intent.getParcelableExtra<Product>("product")
+            productToAdd?.let { product ->
+                CartManager.cartItems.add(product)
+                Toast.makeText(this, "${product.title} ajouté au Panier", Toast.LENGTH_SHORT).show()
+            }
+        }
         val ratingBar: RatingBar = findViewById(R.id.productDetailRatingBar)
         ratingBar.rating = product.rating.rate.toFloat()
         Glide.with(this).load(product.image).into(imageView)
